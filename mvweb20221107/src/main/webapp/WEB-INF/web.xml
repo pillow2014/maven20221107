@@ -10,4 +10,14 @@
     <welcome-file>default.htm</welcome-file>
   </welcome-file-list>
 
+<!-- LoginFilter套用到所有.jsp檔 -->
+<filter>
+<filter-name>Simple Filter</filter-name>
+<filter-class>LoginFilter</filter-class>
+</filter>
+<filter-mapping>
+<filter-name>Simple Filter</filter-name>
+<url-pattern>*.jsp</url-pattern>
+</filter-mapping>
+
 </web-app>

@@ -33,11 +33,12 @@ public class DBProductListener implements ServletContextListener {
 	/**
      * @see ServletContextListener#contextInitialized(ServletContextEvent)
      */
+    //一連線時監聽就執行
     public void contextInitialized(ServletContextEvent sce)  { 
          // TODO Auto-generated method stub
-    	ServletContext context = sce.getServletContext();
-		ArrayList list = prepareArrayList();
-		context.setAttribute("catalog", list);
+    	ServletContext context = sce.getServletContext(); //連線資料庫取得資料
+		ArrayList list = prepareArrayList(); //將資料放入陣列
+		context.setAttribute("catalog", list); //將陣列命名為"catalog"放在全域變數中
     }
     
     

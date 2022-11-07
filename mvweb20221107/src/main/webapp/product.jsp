@@ -9,6 +9,7 @@
 </head>
 <body>
 <jsp:useBean id="catalog"  scope="application"  class="java.util.ArrayList" />
+<!-- 搜尋全域中是否有"catalog"變數，沒有就會自己建立一個空的 -->
 
 	<table border="1" width="70%">
 	    <tr>
